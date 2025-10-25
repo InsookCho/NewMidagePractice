@@ -1,0 +1,29 @@
+class stock():
+    def __init__(self):
+        self.종목코드 = None
+        self.회사명 = None
+        self.현재가 = None
+        self.거래량 = None
+        self.예측 = None
+
+    def evaluate(self):
+     ref=f"종목코드:{self.종목코드}, 회사명: {self.회사명}, 거래량: {self.거래량}, 예측: {self.예측}"
+     print(ref)
+
+def ex6():
+    a=5
+    b='hello'
+    c=stock()
+    c.종목코드 = '005930'
+    c.회사명 = '삼성전자'
+    c.현재가 = 70000
+    c.거래량 = 10000000
+    c.예측 = 1
+    c.evaluate()
+    d=stock()
+    d.종목코드 = '000660'
+    d.회사명 = 'sk하이닉스'
+    d.현재가 = 130000
+    d.거래량 = 5000000
+    d.예측 = 0
+    d.evaluate()
